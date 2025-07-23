@@ -19,11 +19,11 @@ Step 2: Navigate to the frontend folder
 
 Step 3: Install the required packages using npm
 
-Step 4: Create a .env file with the backend API base URL (e.g., REACT_APP_API_BASE_URL=http://localhost:5000)
+Step 4: Create a .env file with the backend API base URL 
 
 Step 5: Start the development server
 
-The frontend will run on localhost (default port: 3000)
+The frontend will run on localhost 
 
 # Edit Files in GitHub
 
@@ -36,7 +36,6 @@ The frontend will run on localhost (default port: 3000)
 - Make your changes and commit them
 
 # What Technologies Are Used?
-This frontend is built with:
 
 - React.js for the UI framework
 
