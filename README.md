@@ -2,6 +2,7 @@
 Welcome to your Contact Manager frontend – a React-based user interface for managing personal contacts with features like login/register, search and sort contacts.
 # How Can I Edit This Code?
 Use Your Preferred IDE (Recommended)
+
 If you want to work locally using VS Code or any IDE:
 
 # Requirements:
