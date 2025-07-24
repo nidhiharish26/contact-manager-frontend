@@ -1,60 +1,77 @@
-# contact-manager-frontend
-Welcome to your Contact Manager frontend – a React-based user interface for managing personal contacts with features like login/register, search and sort contacts.
-# How Can I Edit This Code?
-Use Your Preferred IDE (Recommended)
+# Contact Manager Frontend
 
-If you want to work locally using VS Code or any IDE:
+This is the frontend for the Contact Manager application built using React. It allows users to register, log in, and manage their contacts.
 
-# Requirements:
+## Features
 
-- Node.js
+- User registration and login
+- JWT token storage with localStorage
+- Protected routes
+- Add, search and sort contacts
 
-- npm (Node Package Manager)
+## Getting Started
 
-- A running backend server (connected to MongoDB)
+### Prerequisites
 
-Step 1: Clone the repository from GitHub
+- Node.js and npm
 
-Step 2: Navigate to the frontend folder
+### Installation
 
-Step 3: Install the required packages using npm
+1. Navigate to the frontend directory:
 
-Step 4: Create a .env file with the backend API base URL 
+   ```bash
+   cd contact-manager/frontend
+   
 
-Step 5: Start the development server
+2. Install dependencies:
 
-The frontend will run on localhost 
+   ```bash
+   npm install
+   
 
-# Edit Files in GitHub
+3. Start the React development server:
 
-- Go to the GitHub repository
+   ```bash
+   npm start
+   
 
-- Click on the file you want to edit
+The frontend will run at http://localhost:3000.
 
-- Use the edit (pencil) icon
+## Folder Structure
 
-- Make your changes and commit them
+```
+src/
+├── api/
+├── components/
+├── context/
+├── pages/
+├── services/
+├── App.js
+├── index.js
+```
 
-# What Technologies Are Used?
+## API Integration
 
-- React.js for the UI framework
+All API calls are made from src/services/api.js. Update the base URL in this file to match your backend URL.
 
-- Axios for making API calls to the backend
+Example:
 
-- React Router for navigation
+js
+const BASE_URL = "http://localhost:5000/api";
 
-- Tailwind CSS or plain CSS for styling
 
-- JWT for secure auth-based access control (stored in localStorage)
+## Tech Stack
 
-# How Can I Deploy This Project?
-You can host the frontend using:
+- React
+- React Router
+- Axios
+- Tailwind CSS
+- JWT for authentication
+- localStorage for token persistence
 
-- Netlify
+## Notes
 
-- Vercel
-
-- GitHub Pages (for static React builds)
-
-Connect it with your deployed backend to enable full functionality (login, register, and contact management).
+- Make sure the backend is running at the correct port (default: 5000)
+- Add a .env file if needed to configure API base URL as REACT_APP_API_URL
+- Protected routes are implemented using a custom PrivateRoute wrapper
 
